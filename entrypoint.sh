@@ -6,4 +6,4 @@
 [ -z $SW_AGENT_NAME ] && export SW_AGENT_NAME="Shopizer"
 [ -z $SW_AGENT_COLLECTOR_BACKEND_SERVICES ] && export SW_AGENT_COLLECTOR_BACKEND_SERVICES="collector.skywalking.cluster.local"
 
-/usr/local/tomcat/bin/catalina.sh
+/usr/local/tomcat/bin/catalina.sh start "$@"
